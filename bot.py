@@ -41,4 +41,6 @@ async def zet(ctx, rij: int, kolom: int):
     game["turn"] = game["opponent"] if ctx.author.id == game["turn"] else ctx.author.id
     await ctx.send(print_board(board))
 
-bot.run("MTQ2OTc3MzE5MDM4NDMyMDYxNA.G5aEM5.47IRXGW8B59E1eE6m6aKUtVhdMbGTI4f3hYwMs")
+import os
+bot.run(os.environ['DISCORD_TOKEN'])
+
